@@ -59,7 +59,7 @@ header {
 
 .presentacion-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
   width: 50%;
 }
@@ -67,7 +67,7 @@ header {
 .perfil-redes-container {
   position: absolute;
   top: -90px;
-  left: -90px;
+  left: 0px;
 }
 
 .perfil-redes {
@@ -106,6 +106,11 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.perfil-redes img:hover {
+  transform: scale(1.2);
 }
 
 .presentacion-container {
@@ -118,6 +123,69 @@ header {
 
 .titulo {
   font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* FORMACION  */
+
+#formacion {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.formacion-container {
+  width: 50%;
+}
+
+.formacion-container h2 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.formacion-item {
+  margin-top: 16px;
+  padding-left: 8px;
+  border-left: 6px solid black;
+  border-radius: 5px;
+}
+
+.anio {
+  font-size: 14px;
+}
+
+.institucion {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.diploma {
+  font-weight: 600;
+}
+
+/* EXPERIENCIA */
+
+#experiencia {
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(66, 63, 58);
+  color: white;
+}
+
+.experiencia-container {
+  width: 50%;
+}
+
+.experiencia-item {
+  margin-top: 16px;
+  padding-left: 8px;
+  border-left: 6px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.experiencia-container h2 {
   font-weight: 300;
   font-style: italic;
 }
