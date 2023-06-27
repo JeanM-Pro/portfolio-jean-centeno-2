@@ -189,3 +189,110 @@ header {
   font-weight: 300;
   font-style: italic;
 }
+
+#proyectos {
+  padding: 16px 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.card-body a {
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+.botones {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-container {
+  width: 50%;
+}
+
+.cards-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-size: 14px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card {
+  width: 32%;
+  margin-bottom: 8px;
+}
+
+.card-container h2 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+#contacto {
+  padding: 16px 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.contacto-container {
+  width: 50%;
+}
+
+.contacto-container h2 {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.contacto-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacto-informacion {
+  width: 49%;
+  color: rgb(87, 85, 85);
+}
+
+.formulario-container {
+  width: 49%;
+}
+
+.btn-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos-contacto {
+  width: 100%;
+  display: flex;
+}
+
+.iconos-contacto img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.iconos-contacto img:hover {
+  transform: scale(1.2);
+}
+
+.iconos-contacto a {
+  margin-right: 8px;
+}
