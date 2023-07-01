@@ -7,7 +7,7 @@
 
 header {
   display: flex;
-  background-color: rgb(160, 141, 141);
+  background-color: #121212;
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
@@ -15,8 +15,8 @@ header {
 }
 
 .img-container {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 .img-container img {
@@ -42,19 +42,20 @@ header {
 
 .img-fondo-container {
   width: 100%;
-  height: 200px;
+  height: fit-content;
 }
 
 .img-fondo-container img {
+  height: auto;
   width: 100%;
-  height: 100%;
 }
 
 #presentacion {
-  background-color: rgb(223, 223, 218);
+  background-color: #f16528;
   padding: 16px 0;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .presentacion-content {
@@ -107,6 +108,7 @@ header {
   height: 40px;
   border-radius: 50%;
   transition: 0.3s;
+  box-shadow: 2px 2px 4px black;
 }
 
 .perfil-redes img:hover {
@@ -133,6 +135,8 @@ header {
   padding: 16px 0;
   display: flex;
   justify-content: center;
+  background-color: #34aadc;
+  color: white;
 }
 
 .formacion-container {
@@ -145,10 +149,11 @@ header {
 }
 
 .formacion-item {
-  margin-top: 16px;
+  margin-top: 20px;
   padding-left: 8px;
-  border-left: 6px solid black;
+  border-left: 6px solid #1572b7;
   border-radius: 5px;
+  line-height: 1;
 }
 
 .anio {
@@ -170,8 +175,8 @@ header {
   padding: 16px 0;
   display: flex;
   justify-content: center;
-  background-color: rgb(66, 63, 58);
-  color: white;
+  background-color: #f0db4e;
+  color: black;
 }
 
 .experiencia-container {
@@ -181,8 +186,9 @@ header {
 .experiencia-item {
   margin-top: 16px;
   padding-left: 8px;
-  border-left: 6px solid rgb(255, 255, 255);
+  border-left: 6px solid black;
   border-radius: 5px;
+  line-height: 1;
 }
 
 .experiencia-container h2 {
@@ -192,10 +198,22 @@ header {
 
 #proyectos {
   padding: 16px 0;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  background-color: #62dafc;
+  color: black;
   display: flex;
   justify-content: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .card-body a {
@@ -231,6 +249,7 @@ header {
 .card {
   width: 32%;
   margin-bottom: 8px;
+  box-shadow: 4px 4px 8px black;
 }
 
 .card-container h2 {
@@ -240,8 +259,8 @@ header {
 
 #contacto {
   padding: 16px 0;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #007acc;
+  color: white;
   display: flex;
   justify-content: center;
 }
@@ -264,7 +283,6 @@ header {
 
 .contacto-informacion {
   width: 49%;
-  color: rgb(87, 85, 85);
 }
 
 .formulario-container {
@@ -287,6 +305,7 @@ header {
   height: 40px;
   border-radius: 50%;
   transition: 0.3s;
+  box-shadow: 2px 2px 4px black;
 }
 
 .iconos-contacto img:hover {
@@ -345,7 +364,6 @@ header {
   .formulario-container {
     width: 60%;
     margin-top: 32px;
-    background-color: rgb(207, 206, 203);
     padding: 12px;
     border-radius: 16px;
   }
@@ -399,7 +417,6 @@ header {
   .formulario-container {
     width: 100%;
     margin-top: 32px;
-    background-color: rgb(207, 206, 203);
     padding: 12px;
     border-radius: 16px;
   }
@@ -424,6 +441,15 @@ header {
     border-radius: 0;
     border: 1px solid white;
     text-align: center;
+  }
+
+  .img-fondo-container {
+    height: 90px;
+  }
+
+  .img-fondo-container img {
+    height: 100%;
+    width: 100%;
   }
 
   .presentacion-content {
@@ -478,7 +504,6 @@ header {
   .formulario-container {
     width: 100%;
     margin-top: 32px;
-    background-color: rgb(207, 206, 203);
     padding: 12px;
     border-radius: 16px;
   }
