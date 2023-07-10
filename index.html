@@ -25,15 +25,42 @@
   </head>
   <body>
     <header>
-      <div class="img-container">
-        <img src="images/yop.png" alt="icono de usuario" />
-      </div>
-      <nav class="nav-items">
-        <a href="#presentacion">Apresentação</a>
-        <a href="#formacion">Formação</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#proyectos">Projetos </a>
-        <a href="#contacto">Contato</a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/yop.png" class="icono" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#presentacion">Sobre Mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formacion">Estudos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experiencia">Experiência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="img-fondo-container">
@@ -95,7 +122,7 @@
 
     <section id="formacion">
       <div class="formacion-container">
-        <h2>Formação</h2>
+        <h2>Estudos</h2>
         <!-- Tarjeta de formacion  -->
         <div class="formacion-item">
           <p class="anio">2004 - 2009</p>
@@ -294,6 +321,9 @@
             </div>
           </div>
         </div>
+        <div id="repositories" class="respositorios">
+          <h2 class="repos-title">Repositórios GitHub</h2>
+        </div>
       </div>
     </section>
 
@@ -352,52 +382,57 @@
           </div>
 
           <div class="formulario-container">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Nome</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Insira seu nome"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Email</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="xxxx@ddd.com"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label"
-                >Assunto</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Insira seu assunto"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label"
-                >Mensagem</label
-              >
-              <textarea
-                class="form-control"
-                id="exampleFormControlTextarea1"
-                rows="3"
-              ></textarea>
-            </div>
-            <div class="btn-form-container">
-              <button class="btn btn-primary bg-dark">Enviar</button>
-            </div>
+            <form id="miFormulario">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Insira seu nome"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="xxxx@ddd.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="assunto"
+                  placeholder="Insira seu assunto"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea
+                  class="form-control"
+                  id="mensagem"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div class="btn-form-container">
+                <button
+                  class="btn btn-primary bg-dark"
+                  id="submitBtn"
+                  type="submit"
+                  disabled
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -408,5 +443,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

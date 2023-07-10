@@ -5,24 +5,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  display: flex;
-  background-color: #121212;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 40px;
-  height: 80px;
-}
-
-.img-container {
+.icono {
   width: 50px;
   height: 50px;
-}
-
-.img-container img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
 }
 
 .nav-items a {
@@ -314,6 +299,70 @@ header {
 
 .iconos-contacto a {
   margin-right: 8px;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 8px;
+  border-radius: 16px;
+  margin-top: 16px;
+  background-color: white;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  color: #0b5ed7;
+}
+
+.url {
+  color: #535352;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.data {
+  color: #535352;
+  font-size: 0.8rem;
+  border: 1px solid #535352;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.punto {
+  display: flex;
+  align-items: center;
+}
+
+.data-punto {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.lenguaje {
+  color: black;
+  font-size: 1rem;
+  margin-left: 4px;
+}
+
+.circulo {
+  margin: 0;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0b5ed7;
+}
+
+.respositorios {
+  width: 100%;
+  height: auto;
+  margin-top: 24px;
 }
 
 @media (max-width: 912px) {
